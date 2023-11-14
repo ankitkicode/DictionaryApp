@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#page1{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 3vw;
+}
+nav{
+    width: 100%;
+    height: 10%;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    width: 70%;
+    height: 10%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    
+}
+input{
+    height: 100%;
+    border-radius: .3vw;
+    outline: none;
+    font-size: 2vw;
+    color: #F6F4EB;
+
+}
+.word{
+    width: 80%;
+    background-color: #4682A9;
+}
+.srch{
+    width: 20%;
+    height: 100%;
+    font-size: 2vw;
+    background-color:#4682A9;
+    color: #F6F4EB;
+    transition: all .3s ease;
+    cursor: pointer;
+    border-radius: .3vw;
+
+}
+.srch:hover{
+    background-color: #749BC2;
+}
+
+::placeholder{
+    color: #F6F4EB;
+    padding: 0vw 1vw;
+}
+.result{
+    /* background-color: rosybrown; */
+    width: 70%;
+    height: 80%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.result>p{
+    width: 100%;
+    /* height: 18%; */
+    border: .2vw solid #000;
+    background-color: rosybrown;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1vw;
+    font-size: 1.5vw;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-radius: .3vw;
+    margin: .2vw;
+}
+.result>p>strong{
+    font-size: 2vw;
+    padding: 0 1vw;
+    text-transform: uppercase;
+}
+.result>a{
+    font-size: 1vw;
+    text-decoration: none;
+    background-color: royalblue;
+    padding: 1vw 2vw;
+    border-radius: .5vw;
+    color: #fff;
+    margin-top: 2vw;
+}
+
+
+/* media quries */
+@media screen and (max-width:500px){
+    form {
+        width: 100%;
+        height: 9%;
+        margin-top: 17vw;
+    }
+    input ,.srch{
+        font-size: 4vw;
+    }
+    .result {
+        width: 100%;
+    }
+    .result>p {
+        height: 9%;
+        font-size: 3.5vw;
+    }
+    .result>p>strong {
+        font-size: 3vw;
+    }
+    .result>a {
+        font-size: 4vw;
+    }
+    
+}
